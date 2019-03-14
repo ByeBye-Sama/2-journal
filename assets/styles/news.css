@@ -3,10 +3,14 @@ main css */
 
 /*global
 ------------------------------*/
+*{
+  box-sizing: border-box;
+}
+
 body{
   font: 13px arial;
   color: #fff;
-  background: #000;
+  
 }
 
 a{
@@ -55,6 +59,9 @@ h6{
 
 /*layout
 ------------------------------*/
+.wrapper{
+  overflow: hidden;
+}
 
 .container {
   width: 100%;
@@ -62,9 +69,8 @@ h6{
   margin: auto;
 }
 
-/*body
+/*main
 ------------------------------*/
-
 
 
 /*header
@@ -81,7 +87,6 @@ h6{
   justify-content: space-between;
   align-items: center;
   padding-top: 22px;
-  
 }
 
 .headernav ul,
@@ -93,17 +98,15 @@ h6{
   margin: 0 8px;
 }
 
-.headernav ul{
-  margin-left: -50px;
-}
-
 .headernav a{
   padding: 8px 18px;
   display: inline-block;
   font-size: 15px;
 }
 
-.headernav li a:hover{
+.headernav li a:hover,
+.headernav li a:active,
+.headernav li a:focus{
   background-color: #fff;
   box-shadow: 0px 2px 5px #A9A9A9;
   color: #62346f;
@@ -117,35 +120,15 @@ h6{
   transition-duration: 0.5s;
 }
 
-.miscnav li img:hover{
+.miscnav li img:hover,
+.miscnav li img:active,
+.miscnav li img:focus{
   transform: scale(1.15);
   transform-origin: bottom;
 }
 
-/*section news
+/*global articles
 ------------------------------*/
-
-.section-news{
-  display: flex;
-  justify-content: space-between;
-}
-
-.slide-new,
-.middle-new,
-.shortnew-panel{
-  margin: 20px 10px;
-}
-
-.slide-new,
-.middle-new{
-  position: relative;
-  height: 100%;
-}
-
-.short-new{
-  position: relative;
-  margin-bottom: 20px;
-}
 
 .slide-new .overtext,
 .middle-new .overtext,
@@ -156,13 +139,52 @@ h6{
   bottom: 0px;
   right: 0px;
   background: rgba(0,0,0,.4);
+  cursor: pointer;
+}
+
+.topicality .overtext,
+.more-news .overtext{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  bottom: 0px;
+  right: 10px;
+  background: rgba(0,0,0,.4);
+  cursor: pointer;
 }
 
 .slide-new .text :nth-child(2),
 .middle-new .text,
-.short-new .text{
+.short-new .text,
+.topicality .text,
+.more-news .text{
   position: absolute;
   bottom: 0px;
+}
+
+/*section news
+------------------------------*/
+
+.section-news{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.slide-new,
+.middle-new,
+.shortnew-panel{
+  margin: 20px 0px;
+}
+
+.slide-new,
+.middle-new,
+.short-new{
+  position: relative;
+}
+
+.short-middle{
+  margin: 20px 0px;
 }
 
 .slide-new .text{
@@ -218,38 +240,83 @@ h6{
   font-size: 22px;
 }
 
+.topicality,
+.more-news{
+  position: relative;
+}
+
+.topicality .text,
+.more-news .text{
+  width: 70%;
+  margin: 0 0 65px 11px;
+}
+
 /*section topicality
 ------------------------------*/
+
+.section-topicality h2{
+  color: #62346f;
+  margin: 0 0 15px 0;
+}
 
 .articles-topicality{
   display: flex;
   flex-wrap: wrap;
-}
-
-.section-topicality h2{
-  color: #62346f;
+  margin-left: -10px;
 }
 
 .topicality{
   width: 50%;
   margin: 0 0 20px 0;
   padding: 0 10px;
-  box-sizing: border-box;
 }
 
 /*section more read
 ------------------------------*/
+.section-more h2{
+  margin: 0 0 15px 10px;
+  color: #009d78;
+}
 
 .articles-more{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin-right: -10px;
 }
 
-.section-more h2{
-  color: #009d78;
+.more-news{ 
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0 10px;
 }
 
+/*see more button
+------------------------------*/
+
+.see-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  margin: 25px 0;
+  padding: 6px 38px;
+  background: none;
+  border: 2px solid #959595;
+  border-radius: 20px;
+  color: #959595;
+  font-weight: bold;
+  font-size: 18px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.button:hover,
+.button:active,
+.button:focus{
+  transform: scale(1.05);
+}
 
 /*footer
 ------------------------------*/
@@ -258,6 +325,7 @@ h6{
   background: #62346f;
   height: 75px;
   padding: 0 30px;
+  margin-top: 5px;
 }
 
 .footer .container{

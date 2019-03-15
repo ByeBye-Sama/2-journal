@@ -10,7 +10,6 @@ main css */
 body{
   font: 13px arial;
   color: #fff;
-  
 }
 
 a{
@@ -21,6 +20,12 @@ a{
 p{
   margin: 0 0 10px;
   line-height: 15px;
+}
+
+time{
+  font: 11px arial;
+  font-weight: bold;
+  color: #fff;
 }
 
 h1,
@@ -162,6 +167,59 @@ h6{
   bottom: 0px;
 }
 
+.underline-effect{
+  display: inline-block;
+  position: relative;
+}
+
+.underline-effect::after{
+  content: '';
+  height: 8px;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0%;
+  border-radius: 10px;
+  transition: 0.3s;
+} 
+
+.underline-effect:hover::after{
+  width: 60%;
+}
+
+.underline-news::after{
+  background: #fff;
+}
+
+.underline-topicality::after{
+  background: #62346f;
+}
+
+.underline-more::after{
+  background: #009d78;
+}
+
+.time{
+  position: absolute;
+  bottom: 0px;
+}
+
+.time-slide{
+  margin: 0 0 45px 20px;
+}
+
+.time-middle{
+  margin: 0 0 45px 8px;
+}
+
+.time-short{
+  margin: 0 0 8px 10px;
+}
+
+.time-articles{
+  margin: 0 0 11px 12px;
+}
+
 /*section news
 ------------------------------*/
 
@@ -204,16 +262,18 @@ h6{
   width: 70%;
   padding-left: 8px;
   margin-bottom: 75px;
+  line-height: 24px;
 }
 
 .middle-new .text h3{
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .short-new .text{
-  width: 55%;
+  width: 70%;
   padding-left: 9px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
+  line-height: 18px;
 }
 
 .slide-new img,
@@ -236,8 +296,8 @@ h6{
   height: 160px;
 }
 
-.sections-bottom h3{
-  font-size: 22px;
+.sections-bottom h4{
+  line-height: 24px;
 }
 
 .topicality,
@@ -248,7 +308,7 @@ h6{
 .topicality .text,
 .more-news .text{
   width: 70%;
-  margin: 0 0 65px 11px;
+  margin: 0 0 40px 11px;
 }
 
 /*section topicality
@@ -303,7 +363,7 @@ h6{
   margin: 25px 0;
   padding: 6px 38px;
   background: none;
-  border: 2px solid #959595;
+  border: 3px solid #959595;
   border-radius: 20px;
   color: #959595;
   font-weight: bold;

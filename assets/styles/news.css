@@ -64,6 +64,7 @@ h6{
 
 /*layout
 ------------------------------*/
+
 .wrapper{
   overflow: hidden;
 }
@@ -183,7 +184,9 @@ h6{
   transition: 0.3s;
 } 
 
-.underline-effect:hover::after{
+.underline-effect:hover::after,
+.underline-effect:active::after,
+.underline-effect:focus::after{
   width: 60%;
 }
 
@@ -218,6 +221,78 @@ h6{
 
 .time-articles{
   margin: 0 0 11px 12px;
+}
+
+/*tag
+------------------------------*/
+
+.tag{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+  padding: 2px 5px;
+  background: #fff;
+  border: 1px solid #959595;
+  border-radius: 9px;
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+  transition-property: transform;
+  transition-duration: 0.5s; 
+}
+
+/*social networks
+------------------------------*/
+
+.social-networks{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;  
+}
+
+.networks-news{
+  margin: 0 15px 40px 0; 
+}
+
+.networks-middle,
+.networks-short{
+  margin: 0 5px 10px 0;
+}
+
+.networks-article{
+  margin: 0 5px 14px 0;
+}
+
+.facebook-button,
+.twitter-button{
+  margin: 0 5px;
+  padding: 4px 8px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.facebook-button:hover,
+.facebook-button:active,
+.facebook-button:focus{
+  color: #3B5A9A;
+  border-color: #3B5A9A;
+  transform: scale(1.1);
+}
+
+.twitter-button:hover,
+.twitter-button:active,
+.twitter-button:focus{
+  color: #00ADEF;
+  border-color: #00ADEF;
+  transform: scale(1.1);
 }
 
 /*section news
@@ -333,6 +408,7 @@ h6{
 
 /*section more read
 ------------------------------*/
+
 .section-more h2{
   margin: 0 0 15px 10px;
   color: #009d78;

@@ -110,14 +110,13 @@ h6{
   font-size: 15px;
 }
 
-.headernav li a:hover,
-.headernav li a:active,
-.headernav li a:focus{
+.headernav .hover-nav a:hover,
+.headernav .hover-nav a:active,
+.headernav .hover-nav a:focus{
   background-color: #fff;
-  box-shadow: 0px 2px 5px #A9A9A9;
   color: #62346f;
-  text-shadow: 1px 1px 4px;
   border-radius: 15px;
+  font-weight: bold;
 }
 
 .miscnav li{
@@ -425,7 +424,7 @@ h6{
 ------------------------------*/
 
 .section-topicality h2{
-  color: #62346f;
+  color: #7b3fb6;
   margin: 0 0 15px 0;
 }
 
@@ -474,9 +473,7 @@ h6{
   margin: 25px 0;
   padding: 6px 38px;
   background: none;
-  border: 3px solid #959595;
   border-radius: 20px;
-  color: #959595;
   font-weight: bold;
   font-size: 18px;
   transition-property: transform;
@@ -487,6 +484,16 @@ h6{
 .button:active,
 .button:focus{
   transform: scale(1.05);
+}
+
+.first-more{
+  border: 3px solid #7b3fb6;
+  color: #7b3fb6;
+}
+
+.second-more{
+  border: 3px solid #009d78;
+  color: #009d78;
 }
 
 /*footer

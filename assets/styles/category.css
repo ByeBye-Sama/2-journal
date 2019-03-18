@@ -1,0 +1,94 @@
+/*category css
+*/
+
+/*global
+------------------------------*/
+
+time{
+  font: 11px arial;
+  font-weight: normal;
+  color: #4d4d4d;
+}
+
+/*header
+------------------------------*/
+.tags-header{
+  background: #3a1045;
+  font-size: 12px;
+  padding: 0 35px;
+  margin-bottom: 10px;
+}
+
+.active-category a{
+  background-color: #fff;
+  color: #62346f;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.element-tag{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.tagsnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  white-space: nowrap;
+}
+
+.tagsnav li{
+  margin: 0 10px;
+}
+
+/*main
+------------------------------*/
+main{
+  color: #000;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*section
+------------------------------*/
+
+.section-category{
+  width: 66.66%;
+}
+
+.articles-section{
+  margin-top: 20px;
+}
+
+.articles-section img{
+  height: 117px;
+}
+
+.category-article{
+  display: flex;
+}
+
+/*aside
+------------------------------*/
+
+.aside-more{
+  width: 33.3%;
+}
+
+.aside-more{
+  margin-left: 20px
+}
+
+.aside-more h3{
+  margin-top: 10px;
+  font-size: 28px;
+  color: #009d78;
+}

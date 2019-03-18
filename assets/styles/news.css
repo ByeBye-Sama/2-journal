@@ -238,8 +238,36 @@ h6{
   color: #000;
   font-weight: bold;
   font-size: 13px;
-  transition-property: transform;
-  transition-duration: 0.5s; 
+}
+
+.tag:hover,
+.tag:active,
+.tag:focus{
+  color: #fff;
+}
+
+.politics:hover,
+.politics:active,
+.politics:hover{
+  background: #5c3667;
+}
+
+.technology:hover,
+.technology:active,
+.technology:focus{
+  background: #f9a103;
+}
+
+.sport:hover,
+.sport:active,
+.sport:focus{
+  background: #ff0505;
+}
+
+.entertainment:hover,
+.entertainment:active,
+.entertainment:focus{
+  background: #ff00e3;
 }
 
 /*social networks
@@ -268,7 +296,6 @@ h6{
 .facebook-button,
 .twitter-button{
   margin: 0 5px;
-  padding: 4px 8px;
   background: none;
   border: 2px solid #fff;
   border-radius: 100%;
@@ -279,19 +306,27 @@ h6{
   transition-duration: 0.5s;
 }
 
+.facebook-button{
+  padding: 5px 9px;
+}
+
+.twitter-button{
+  padding: 5px 6px;
+}
+
 .facebook-button:hover,
 .facebook-button:active,
 .facebook-button:focus{
-  color: #3B5A9A;
-  border-color: #3B5A9A;
+  color: #3b5999;
+  border-color: #3b5999;
   transform: scale(1.1);
 }
 
 .twitter-button:hover,
 .twitter-button:active,
 .twitter-button:focus{
-  color: #00ADEF;
-  border-color: #00ADEF;
+  color: #55acee;
+  border-color: #55acee;
   transform: scale(1.1);
 }
 

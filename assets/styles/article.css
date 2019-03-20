@@ -1,0 +1,59 @@
+/*category css
+*/
+
+/*global
+------------------------------*/
+
+p{
+  margin: 12px 0;
+  line-height: 18px;
+}
+
+/*main
+------------------------------*/
+
+.button{
+  padding: 3px 35px;
+}
+
+/*article
+------------------------------*/
+
+.time-article{
+  display: inline-block;
+  margin: 0 0 14px 0;
+}
+
+.tag-article{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 10px 0 0;
+  padding: 2px 7px;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 13px;
+  z-index: 2;
+}
+
+.articles-section h2{
+  line-height: 36px;
+}
+
+.article-img img{
+  height: 310px;
+  width: 100%;
+  margin: 10px 0 12px 0;
+}
+
+/*aside
+------------------------------*/
+
+.advertising{
+  margin: 15px 0 0 0;
+}
+
+.advertising img{
+  height: 430px;
+  width: 100%;
+}

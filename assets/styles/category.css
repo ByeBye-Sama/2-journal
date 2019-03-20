@@ -7,7 +7,16 @@
 time{
   font: 11px arial;
   font-weight: normal;
-  color: #4d4d4d;
+  color: #6d6d6d;
+}
+
+a{
+  font-family: 'Lato', sans-serif;
+  
+}
+
+h4{
+  line-height: 20px;
 }
 
 /*header
@@ -40,10 +49,16 @@ time{
   align-items: center;
   flex-flow: wrap;
   white-space: nowrap;
+  font-size: 13px;
 }
 
 .tagsnav li{
   margin: 0 10px;
+}
+
+.category-types li a:hover,
+.tagsnav li a:hover{
+  text-decoration: underline;
 }
 
 /*main
@@ -57,7 +72,45 @@ main{
   justify-content: space-between;
 }
 
-/*section
+.tag-on{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 10px 0;
+  padding: 2px 7px;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 13px;
+  z-index: 2;
+}
+
+.politics-on{
+  background: #5c3667;
+}
+
+.technology-on{
+  background: #f9a103;
+}
+
+.sport-on{
+  background: #ff0505;
+}
+
+.entertainment-on{
+  background: #ff00e3;
+}
+
+.networks-article{
+  margin: 0 0 7px 0;
+}
+
+.facebook-button,
+.twitter-button{
+  color: #000;
+  border: 2px solid #000;
+}
+
+/*section-articles
 ------------------------------*/
 
 .section-category{
@@ -65,7 +118,22 @@ main{
 }
 
 .articles-section{
-  margin-top: 20px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.open-new{
+  position: absolute; 
+  left: 0;
+  top: 0; 
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.time-news{
+  display: inline-block;
+  margin: 0 0 5px 0;
 }
 
 .articles-section img{
@@ -74,6 +142,16 @@ main{
 
 .category-article{
   display: flex;
+  margin-top: 6px;
+}
+
+.article-right{
+  position: relative; 
+  margin: 3px 0 0 20px;
+}
+
+.resume-text{
+  line-height: 20px;
 }
 
 /*aside
@@ -84,11 +162,58 @@ main{
 }
 
 .aside-more{
-  margin-left: 20px
+  margin-left: 22px;
 }
 
 .aside-more h3{
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   font-size: 28px;
   color: #009d78;
+}
+
+.interesting-articles{
+  margin: 20px 0 0 0;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.interesting-articles img{
+  height: 100px;
+  width: 100%;
+}
+
+.interesting-text{
+  position: relative;
+}
+
+.interesting-time{
+  display: inline-block;
+  margin: 14px 0;
+}
+
+.tag-interesting{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 8px 0 0;
+  padding: 2px 7px;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.advertising{
+  margin: 35px 0 0 0;
+}
+
+.advertising img{
+  height: 608px;
+  width: 100%;
+}
+
+/*footer
+------------------------------*/
+
+.footer{
+  margin-top: 35px;
 }

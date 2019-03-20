@@ -237,6 +237,7 @@ h6{
   color: #000;
   font-weight: bold;
   font-size: 13px;
+  z-index: 2;
 }
 
 .tag:hover,
@@ -277,6 +278,7 @@ h6{
   position: absolute;
   bottom: 0;
   right: 0;  
+  z-index: 2;
 }
 
 .networks-news{
@@ -502,7 +504,6 @@ h6{
 .footer{
   background: #62346f;
   height: 75px;
-  padding: 0 30px;
   margin-top: 5px;
 }
 
@@ -510,12 +511,14 @@ h6{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  height: 100%;
 }
 
 .footer a,
 .footer p{
   font-family: 'Lato', sans-serif;
+  margin: 12px 0;
+  line-height: 18px;
 }
 
 .footer a{

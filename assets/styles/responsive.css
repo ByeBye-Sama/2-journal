@@ -1,1 +1,89 @@
- 
+@media (max-width: 768px) {
+
+  /*
+main css */
+
+/*global
+------------------------------*/
+
+body{
+  font: 13px arial;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+p{
+  margin: 0 0 10px;
+  line-height: 15px;
+}
+
+h1{
+  font-size: 28px;
+}
+
+
+/*layout
+------------------------------*/
+
+.wrapper{
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+/*main
+------------------------------*/
+
+
+/*header
+------------------------------*/
+.header{
+  height: 73px;
+}
+
+.headernav,
+.miscnav{
+  display: none;
+}
+
+/*global articles
+------------------------------*/
+
+
+/*tag
+------------------------------*/
+
+
+/*social networks
+------------------------------*/
+
+
+/*section news
+------------------------------*/
+
+
+/*section bottom global
+------------------------------*/
+
+
+/*section more read
+------------------------------*/
+
+
+/*see more button
+------------------------------*/
+
+
+/*footer
+------------------------------*/
+
+
+} 

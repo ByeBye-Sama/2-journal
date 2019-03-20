@@ -108,15 +108,16 @@ h6{
   padding: 8px 18px;
   display: inline-block;
   font-size: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+ 
 }
 
 .headernav .hover-nav a:hover,
 .headernav .hover-nav a:active,
 .headernav .hover-nav a:focus{
-  background-color: #fff;
+  background: #fff;
   color: #62346f;
-  border-radius: 15px;
-  font-weight: bold;
 }
 
 .miscnav li{
@@ -232,7 +233,7 @@ h6{
   margin: 10px 10px 0 0;
   padding: 2px 5px;
   background: #fff;
-  border: 1px solid #959595;
+  border: 1px solid #fff;
   border-radius: 9px;
   color: #000;
   font-weight: bold;
@@ -504,6 +505,7 @@ h6{
 .footer{
   background: #62346f;
   height: 75px;
+  padding: 0 30px;
   margin-top: 5px;
 }
 

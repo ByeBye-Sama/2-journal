@@ -21,6 +21,11 @@ h4{
 
 /*header
 ------------------------------*/
+
+.headernav a{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .tags-header{
   background: #3a1045;
   font-size: 12px;
@@ -50,6 +55,19 @@ h4{
   flex-flow: wrap;
   white-space: nowrap;
   font-size: 13px;
+}
+
+.arrow-tag{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 100%; 
+  background: #fff;
+  color: #3a1045;
 }
 
 .tagsnav li{

@@ -7,22 +7,20 @@ main css */
 ------------------------------*/
 
 body{
-  font: 13px arial;
-  color: #fff;
-}
-
-a{
-  text-decoration: none;
+  font: 11px arial;
   color: #fff;
 }
 
 p{
-  margin: 0 0 10px;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 h1{
   font-size: 28px;
+}
+
+h2{
+  font-size: 22px;
 }
 
 
@@ -47,6 +45,7 @@ h1{
 ------------------------------*/
 .header{
   height: 73px;
+  padding: 0 15px;
 }
 
 .headernav,
@@ -69,6 +68,27 @@ h1{
 /*section news
 ------------------------------*/
 
+.slide-new,
+.middle-new{
+ margin: 20px 10px; 
+}
+
+.slide-new img,
+.middle-new img{
+  height: 416px;
+}
+
+.middle-new img{
+  width: 148px;
+}
+
+.shortnew-panel{
+  display: flex;
+}
+
+.short-new img{
+  width: 236px;
+}
 
 /*section bottom global
 ------------------------------*/
@@ -85,5 +105,9 @@ h1{
 /*footer
 ------------------------------*/
 
+.footer{
+  height: 55px;
+  padding: 0 15px;
+}
 
 } 

@@ -62,6 +62,10 @@ h6{
   font-size: 16px;
 }
 
+img{
+  object-fit: cover;
+}
+
 /*layout
 ------------------------------*/
 
@@ -133,6 +137,25 @@ h6{
   transform-origin: bottom;
 }
 
+.hamburger-menu{
+  display: none;
+}
+
+.hamburger-button{
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.hamburger-button:hover,
+.hamburger-button:active,
+.hamburger-button:focus{
+  transform: scale(1.1);
+}
 /*global articles
 ------------------------------*/
 
@@ -141,11 +164,16 @@ h6{
 .short-new .overtext{
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 10px;
   bottom: 0px;
-  right: 0px;
-  background: rgba(0,0,0,.4);
+  right: 10px;
+  background: rgba(0,0,0,.3);
   cursor: pointer;
+}
+
+.short-new .overtext{
+  left: 0;
+  right: 0;
 }
 
 .topicality .overtext,
@@ -339,18 +367,31 @@ h6{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; 
+  margin: 20px 0;
 }
 
 .slide-new,
 .middle-new,
 .shortnew-panel{
-  margin: 20px 0px;
+  padding: 0 10px;
 }
 
 .slide-new,
 .middle-new,
 .short-new{
   position: relative;
+}
+
+.slide-new{
+  width: 50%;
+}
+
+.middle-new{
+  width: 16.66%;
+}
+
+.shortnew-panel{
+  width: 33.33%;
 }
 
 .short-middle{
@@ -382,7 +423,7 @@ h6{
 }
 
 .short-new .text{
-  width: 70%;
+  width: 65%;
   padding-left: 9px;
   margin-bottom: 28px;
   line-height: 18px;
@@ -390,10 +431,12 @@ h6{
 
 .slide-new img,
 .middle-new img{
+  width: 100%;
   height: 340px;
 }
 
 .shortnew-panel img{
+  width: 100%;
   height: 100px;
 }
 
@@ -426,6 +469,10 @@ h6{
 /*section topicality
 ------------------------------*/
 
+.section-topicality{
+  padding: 0 0 0 10px;
+}
+
 .section-topicality h2{
   color: #7b3fb6;
   margin: 0 0 15px 0;
@@ -445,6 +492,10 @@ h6{
 
 /*section more read
 ------------------------------*/
+
+.section-more{
+  padding: 0 10px 0 0;
+}
 
 .section-more h2{
   margin: 0 0 15px 10px;
@@ -504,8 +555,7 @@ h6{
 
 .footer{
   background: #62346f;
-  height: 75px;
-  padding: 0 30px;
+  padding: 20px;
   margin-top: 5px;
 }
 
@@ -519,13 +569,13 @@ h6{
 .footer a,
 .footer p{
   font-family: 'Lato', sans-serif;
-  margin: 12px 0;
   line-height: 18px;
+  margin: 0px;
 }
 
 .footer a{
   display: inline-block;
-  padding: 10px;
+  padding: 0 10px;
   font-weight: bold;
   text-decoration: underline;
   transition-property: transform;

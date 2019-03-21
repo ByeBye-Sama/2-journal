@@ -8,7 +8,6 @@ main css */
 
 body{
   font: 11px arial;
-  color: #fff;
 }
 
 p{
@@ -23,19 +22,13 @@ h2{
   font-size: 22px;
 }
 
+h4{
+  font-size: 13px;
+}
 
 /*layout
 ------------------------------*/
 
-.wrapper{
-  overflow: hidden;
-}
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: auto;
-}
 
 /*main
 ------------------------------*/
@@ -53,6 +46,10 @@ h2{
   display: none;
 }
 
+.hamburger-menu{
+  display: block;
+}
+
 /*global articles
 ------------------------------*/
 
@@ -60,17 +57,69 @@ h2{
 /*tag
 ------------------------------*/
 
+.short-new .tag,
+.topicality .tag,
+.more-news .tag
+{
+  margin: 8px 7px 0 0;
+  padding: 1px 4px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 9px;
+  color: #000;
+  font-weight: bold;
+  font-size: 11px;
+}
+
 
 /*social networks
 ------------------------------*/
+
+.networks-article,
+.networks-short{
+  margin: 0 8px 8px 0;
+}
+
+.networks-article .facebook-button,
+.networks-article .twitter-button,
+.networks-short .facebook-button,
+.networks-short .twitter-button{
+  font-size: 10px;
+  margin: 0 3px;
+}
+ 
+.networks-article .facebook-button,
+.networks-short .facebook-button{
+  padding: 4px 7px;
+}
+
+.networks-article .twitter-button,
+.networks-short .twitter-button{
+  padding: 4px 5px;
+}
 
 
 /*section news
 ------------------------------*/
 
-.slide-new,
+.slide-new{
+  width: 77.77%;
+}
+
 .middle-new{
- margin: 20px 10px; 
+  width: 22.22%;
+}
+
+.short-new{
+  padding: 0 10px;
+}
+
+.short-middle{
+  margin: 0;
+}
+
+.slide-new h2{
+  font-size: 32px;
 }
 
 .slide-new img,
@@ -78,21 +127,45 @@ h2{
   height: 416px;
 }
 
-.middle-new img{
-  width: 148px;
-}
-
 .shortnew-panel{
   display: flex;
+  margin: 20px 0;
+  padding: 0;
+  width: 100%;
 }
 
-.short-new img{
-  width: 236px;
+.short-new .overtext{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  bottom: 0px;
+  right: 10px;
+}
+
+.short-new h4{
+  line-height: 14px;
+}
+
+.short-new .text{
+  width: 80%;
+  margin-bottom: 26px;
+}
+
+.short-first .text{
+  margin-bottom: 36px;
 }
 
 /*section bottom global
 ------------------------------*/
 
+.topicality .text,
+.more-news .text{
+  width: 85%;
+}
+
+.sections-bottom h4{
+  line-height: 18px;
+}
 
 /*section more read
 ------------------------------*/
@@ -110,4 +183,175 @@ h2{
   padding: 0 15px;
 }
 
-} 
+}
+
+
+/*----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 426px) {
+
+  /*
+main css */
+
+/*global
+------------------------------*/
+
+body{
+  font: 10px arial;
+}
+
+p{
+  line-height: 13px;
+}
+
+h1{
+  font-size: 28px;
+}
+
+h2{
+  font-size: 22px;
+}
+
+h3{
+  font-size: 14px;
+}
+
+h4{
+  font-size: 14px;
+}
+
+time{
+  font-size: 9px;
+}
+
+/*layout
+------------------------------*/
+
+
+/*main
+------------------------------*/
+
+
+/*header
+------------------------------*/
+
+
+/*global articles
+------------------------------*/
+
+
+/*tag
+------------------------------*/
+
+/*social networks
+------------------------------*/
+
+.networks-news,
+.networks-middle{
+  margin: 0 8px 8px 0;
+}
+
+.networks-news .facebook-button,
+.networks-news .twitter-button,
+.networks-middle .facebook-button,
+.networks-middle .twitter-button{
+  font-size: 10px;
+  margin: 0 3px;
+}
+ 
+.networks-news .facebook-button,
+.networks-middle .facebook-button{
+  padding: 4px 7px;
+}
+
+.networks-news .twitter-button,
+.networks-middle .twitter-button{
+  padding: 4px 5px;
+}
+
+/*section news
+------------------------------*/
+
+.slide-new,
+.middle-new{
+  width: 100%;
+}
+
+.slide-new{
+  margin: -10px 0 10px 0;
+}
+
+.shortnew-panel{
+  flex-direction: column;
+  margin: 5px 0 0 0;
+}
+
+.short-new{
+  margin: 5px 0;
+}
+
+.slide-new img{
+  height: 150px;
+}
+
+.middle-new img{
+  height: 90px;
+}
+
+.middle-new .text h3{
+  font-size: 14px;
+}
+
+.slide-new h2{
+  font-size: 15px;
+}
+
+/*section bottom global
+------------------------------*/
+
+.sections-bottom{
+  flex-wrap: wrap;
+}
+
+.topicality .text,
+.more-news .text{
+  width: 65%;
+  margin: 0 0 45px 8px;
+}
+/*section topicality
+------------------------------*/
+
+.topicality{
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+/*section more read
+------------------------------*/
+
+.more-news{
+ margin: 0 0 10px 0;
+}
+
+/*see more button
+------------------------------*/
+
+.button{
+  margin: 10px 0 38px 0;
+}
+
+/*footer
+------------------------------*/
+
+.footer .container{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer h2{
+  font-size: 16px;
+}
+
+}

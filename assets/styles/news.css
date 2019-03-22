@@ -137,6 +137,44 @@ img{
   transform-origin: bottom;
 }
 
+/*hidden-elements
+------------------------------*/
+
+.search{
+  display: none;
+  width: 100%;
+}
+
+.search-bar{
+  width: 90%;
+  font-size: 26px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+}
+
+.search-bar,
+.search-bar::placeholder{
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.cancel-button{
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.cancel-button:hover,
+.cancel-button:active,
+.cancel-button:focus{
+  transform: scale(1.1);
+}
+
 .hamburger-menu{
   display: none;
 }
@@ -156,6 +194,29 @@ img{
 .hamburger-button:focus{
   transform: scale(1.1);
 }
+
+.share-panel{
+  display: none;
+  background: #562364;
+}
+
+.share-buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.share-buttons a{
+  margin: 0 15px;
+  letter-spacing: 1px;
+}
+
+.share-buttons i{
+  padding: 0 5px;
+  font-size: 12px;
+}
+
 /*global articles
 ------------------------------*/
 

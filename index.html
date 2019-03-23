@@ -5,10 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/scripts/slick/slick/slick.css">
   <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/main.css">
-  <title>Cats</title>
-  <meta name="description" content="Kitties doing kitties things">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/news.css">
+  <link rel="stylesheet" href="./assets/styles/responsive.css">
+  <title>Last news</title>
+  <meta name="description" content="Last news about whatever you want">
 </head>
 
 <body>
@@ -16,33 +21,463 @@
 
     <!--Header------------------------------------>
 
-    <header>
+    <header class="header">
       <div class="container">
-        <a href=""></a>
-        <nav>
+        <h1 class="logo"><a href="./index.html">ELVERAZ</a></h1>
+        <nav class="headernav">
           <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Quienes somos</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li><a href="">Contacto</a></li>
+            <li class="hover-nav"><a href="./politics.html">Politics</a></li>
+            <li class="hover-nav"><a href="">Sport</a></li>
+            <li class="hover-nav"><a href="">Show</a></li>
+            <li class="hover-nav"><a href="">Technology</a></li>
           </ul>
         </nav>
+
+        <nav class="miscnav">
+          <ul>
+            <li>
+              <a class="js_btnSocial" href=""><img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/873C2A16-1E78-4D59-A5A8-F9859114D61E.svg"
+                  alt=""></a>
+            </li>
+            <li>
+              <a class="js_btnSearch" href=""><img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/AC5AFB56-EA80-4F31-9AC0-6F2E9DDE7BD3.svg"
+                  alt=""></a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Search Panel------------------------------------>
+
+        <div class="hamburger-menu">
+          <button class="hamburger-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="search">
+          <input class="search-bar" type="search" placeholder="Escribe aqui tu busqueda y presiona enter" required
+            minlength="4" maxlength="45">
+          <button class="cancel-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
 
       </div>
     </header>
 
+    <!--Social Networks Panel------------------------------------>
+
+    <div class="share-panel">
+      <div class="container">
+        <nav>
+          <ul class="share-buttons">
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <!--Main------------------------------------>
+
+    <main class="main">
+      <div class="container">
+
+        <!--Section News------------------------------------>
+
+        <section class="section-news">
+          <div class="slide-new">
+            <img src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/743FCD8A-8776-4B28-8FAF-AC97EDC7FE2B.png"
+              alt="">
+            <div class="overtext">
+              <div class="text">
+                <h2 class="underline-effect underline-news">Politica</h2>
+                <h3>Salvador del Solar es el nuevo presidente del Consejo de Ministros</h3>
+              </div>
+              <time class="time time-slide" datetime="18:00">Hace 3 horas</time>
+              <div class="social-networks networks-news">
+                <button class="facebook-button">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="twitter-button">
+                  <i class="fab fa-twitter"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-new">
+            <img src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/ED0922DA-3C40-4E6B-8306-FE0F37A82D20.png"
+              alt="">
+            <div class="overtext">
+              <button class="tag politics">Politica</button>
+              <div class="text">
+                <h3>Las protestas cada vez son mayores</h3>
+              </div>
+              <time class="time time-middle" datetime="18:00">Hace 3 horas</time>
+              <div class="social-networks networks-middle">
+                <button class="facebook-button">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+                <button class="twitter-button">
+                  <i class="fab fa-twitter"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="shortnew-panel">
+            <div class="short-new short-first">
+              <img src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/71159D45-2DE4-4572-BA5C-A5B411E82638.png"
+                alt="">
+              <div class="overtext">
+                <button class="tag sport">Deporte</button>
+                <div class="text">
+                  <h4>Las chicas campeonas otra vez</h4>
+                </div>
+                <div class="social-networks networks-short">
+                  <button class="facebook-button">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="twitter-button">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="short-new short-middle">
+              <img src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/09111C0C-FBEF-47D3-80CD-89EAFEA502F2.png"
+                alt="">
+              <div class="overtext">
+                <button class="tag entertainment">Espectaculo</button>
+                <div class="text">
+                  <h4>Los cuatro famosos afinaron su pulso para ganar los 'Aros flotantes'</h4>
+                </div>
+                <div class="social-networks networks-short">
+                  <button class="facebook-button">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="twitter-button">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="short-new">
+              <img src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/8E71AF0A-240F-4639-8C4C-A810301E59AF.png"
+                alt="">
+              <div class="overtext">
+                <button class="tag technology">Tecnologia</button>
+                <div class="text">
+                  <h4>"Facebook Down": las teorías que explican la caída mundial de la red</h4>
+                </div>
+                <div class="social-networks networks-short">
+                  <button class="facebook-button">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                  <button class="twitter-button">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="sections-bottom">
+
+          <!--Section Topicality------------------------------------>
+
+          <section class="section-topicality">
+            <h2 class="underline-effect underline-topicality">Actualidad</h2>
+            <div class="articles-topicality">
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/61D95856-1934-40F5-AEAE-33C1287B6D07.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag politics">Politica</button>
+                  <div class="text">
+                    <h4>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de Justicia</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/C359D1E7-B96A-455C-8EC4-A82298E9CA64.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag entertainment">Espectaculo</button>
+                  <div class="text">
+                    <h4>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la ‘vengadora’”</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/61D95856-1934-40F5-AEAE-33C1287B6D07.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag politics">Politica</button>
+                  <div class="text">
+                    <h4>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de Justicia</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/C359D1E7-B96A-455C-8EC4-A82298E9CA64.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag technology">Tecnologia</button>
+                  <div class="text">
+                    <h4>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la ‘vengadora’”</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/61D95856-1934-40F5-AEAE-33C1287B6D07.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag politics">Politica</button>
+                  <div class="text">
+                    <h4>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de Justicia</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/C359D1E7-B96A-455C-8EC4-A82298E9CA64.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag entertainment">Espectaculo</button>
+                  <div class="text">
+                    <h4>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la ‘vengadora’”</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/61D95856-1934-40F5-AEAE-33C1287B6D07.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag politics">Politica</button>
+                  <div class="text">
+                    <h4>Vicente Zeballos: Estas son las 21 preguntas que responderá el ministro de Justicia</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="topicality">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/C359D1E7-B96A-455C-8EC4-A82298E9CA64.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag technology">Tecnologia</button>
+                  <div class="text">
+                    <h4>Mario Irivarren a Rafael Cardozo: “Atrasaste a Loco Vargas con la ‘vengadora’”</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="see-more">
+              <button class="button first-more">Ver mas</button>
+            </div>
+
+          </section>
+
+          <!--Section More read------------------------------------>
+
+          <section class="section-more">
+            <h2 class="underline-effect underline-more">Mas leidas</h2>
+            <div class="articles-more">
+              <article class="more-news">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/2BEE1B31-C6C2-4FCE-A003-14D47D87BEBA.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag sport">Deportes</button>
+                  <div class="text">
+                    <h4>Newell's vs Gimnasia La Plata EN VIVO: partidazo por la Superliga Argentina</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="more-news">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/2BEE1B31-C6C2-4FCE-A003-14D47D87BEBA.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag sport">Deportes</button>
+                  <div class="text">
+                    <h4>Newell's vs Gimnasia La Plata EN VIVO: partidazo por la Superliga Argentina</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="more-news">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/2BEE1B31-C6C2-4FCE-A003-14D47D87BEBA.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag sport">Deportes</button>
+                  <div class="text">
+                    <h4>Newell's vs Gimnasia La Plata EN VIVO: partidazo por la Superliga Argentina</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="more-news">
+                <img
+                  src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/2BEE1B31-C6C2-4FCE-A003-14D47D87BEBA.png"
+                  alt="">
+                <div class="overtext">
+                  <button class="tag sport">Deportes</button>
+                  <div class="text">
+                    <h4>Newell's vs Gimnasia La Plata EN VIVO: partidazo por la Superliga Argentina</h4>
+                  </div>
+                  <div class="social-networks networks-article">
+                    <button class="facebook-button">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="twitter-button">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="see-more">
+              <button class="button second-more">Ver mas</button>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </main>
+
     <!--Footer------------------------------------>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <p>Todos los derechos reservados</p>
-        <p>Made it by <a href="https://www.instagram.com/byebye.sama/" target="_blank">JoaquinC</a></p>
-
+        <h2>ELVERAZ</h2>
+        <p>Copyright | Made it by <a href="https://www.instagram.com/byebye.sama/" target="_blank">JoaquinC</a></p>
       </div>
-
     </footer>
 
   </div>
+
+  <script src="./assets/scripts/jquery.3.3.1.js">
+  </script>
+
+  <script src="./assets/scripts/main.js">
+  </script>
 
 </body>
 

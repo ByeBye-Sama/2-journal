@@ -36,22 +36,56 @@
         <nav class="miscnav">
           <ul>
             <li>
-              <a href=""><img
+              <a class="js_btnSocial" href=""><img
                   src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/873C2A16-1E78-4D59-A5A8-F9859114D61E.svg"
                   alt=""></a>
             </li>
             <li>
-              <a href=""><img
+              <a class="js_btnSearch" href=""><img
                   src="https://cdn.zeplin.io/5c6e3de1692fc64091b45afd/assets/AC5AFB56-EA80-4F31-9AC0-6F2E9DDE7BD3.svg"
                   alt=""></a>
             </li>
           </ul>
         </nav>
+
+        <!--Search Panel------------------------------------>
+
+        <div class="hamburger-menu">
+          <button class="hamburger-button">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="search">
+          <input class="search-bar" type="search" placeholder="Escribe aqui tu busqueda y presiona enter" required
+            minlength="4" maxlength="45">
+          <button class="cancel-button js_btnCancel">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
       </div>
     </header>
 
+    <!--Social Networks Panel------------------------------------>
+
+    <div class="share-panel">
+      <div class="container">
+        <nav>
+          <ul class="share-buttons">
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i>Facebook</a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <!--Tags------------------------------------>
-    
+
     <div class="tags-header">
       <div class="container">
         <nav class="element-tag">
@@ -112,7 +146,8 @@
                   la fujimorista <b>Rosa Bartra</b>.</p>
                 <p>Si bien esta comisión determinó la presunta comisión de delitos de 132 personas, buena parte de los
                   señalados ya venían siendo investigados por el <b>Ministerio Público</b>.</p>
-                <p>Por lo demás, tal como denunció en su momento <b>La República</b>, esta comisión sirvió como una agencia de
+                <p>Por lo demás, tal como denunció en su momento <b>La República</b>, esta comisión sirvió como una
+                  agencia de
                   empleo: treinta asesores, con un presupuesto promedio mensual de 213 mil soles.</p>
                 <p>Según una revisión en detalle de las planillas efectuada por este diario, durante 23 meses de
                   funcionamiento, esta comisión gastó más de cuatro millones de soles, únicamente en la contratación de
@@ -196,6 +231,16 @@
     </footer>
 
   </div>
+
+  <script src="./assets/scripts/jquery.3.3.1.js">
+  </script>
+
+  <script src="./assets/scripts/slick/slick/slick.js">
+  </script>
+
+  <script src="./assets/scripts/main.js">
+  </script>
+
 </body>
 
 </html>

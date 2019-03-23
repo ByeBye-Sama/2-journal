@@ -649,9 +649,5 @@ img{
   transform: scale(1.2);
 }
 
-/*js-elements
+/*js_elements
 ------------------------------*/
-
-.hide{
-  display: none;
-}

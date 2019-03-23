@@ -7,8 +7,16 @@ $(document).ready(function () {
 
   $('.js_btnSearch').on('click', function (e) {
     e.preventDefault();
-    $('.logo, .headernav, .miscnav').addClass('hide');
-    $('.search').slideToggle("slow");
+    $('.logo, .headernav, .miscnav').hide();
+    $('.share-panel').slideUp();
+    $('.search').slideDown("slow");
+  });
+
+  $('.js_btnCancel').on('click', function (e) {
+    e.preventDefault();
+    $('.search').hide();
+    $('.logo, .headernav, .miscnav').slideDown("slow");
+    
   });
 
 });

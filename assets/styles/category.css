@@ -29,7 +29,7 @@ h4{
 .tags-header{
   background: #3a1045;
   font-size: 12px;
-  padding: 0 35px;
+  padding: 0 15px;
   margin-bottom: 10px;
 }
 
@@ -40,38 +40,38 @@ h4{
   font-weight: bold;
 }
 
-.element-tag{
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5px;
+.js_nav a{
+  color: #000;
 }
 
 .tagsnav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-flow: wrap;
-  white-space: nowrap;
+  height: 40px;
   font-size: 13px;
+  white-space: nowrap;
 }
 
-.arrow-tag{
-  display: inline-block;
+.tagsnav .slick-arrow {
   width: 20px;
   height: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 100%; 
   background: #fff;
   color: #3a1045;
+  border: 0;
+  border-radius: 100%;
+}
+
+.tagsnav .slick-prev {
+  margin-right: 10px;
+}
+
+.tagsnav .slick-next {
+  margin-left: 10px;
 }
 
 .tagsnav li{
-  margin: 0 10px;
+  text-align: center;
 }
 
 .category-types li a:hover,

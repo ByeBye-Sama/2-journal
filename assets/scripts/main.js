@@ -37,4 +37,43 @@ $(document).ready(function () {
     $('.rsp-headernav, .share-panel').slideUp();
   });
 
+  if ($(document).width() <=426) {
+    $('.js_tagnav').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+    });
+  } else if ($(document).width() >=426 && $(document).width() <=768) {
+    $('.js_tagnav').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+    });
+  } else {
+    $('.js_tagnav').slick({
+      infinite: true,
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+    });
+  }
+
+  $('.js_slideNew').slick({
+    infinite: true,
+    speed: 700,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    arrows: false,
+    dots: true
+  });
+
 });

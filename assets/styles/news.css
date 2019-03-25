@@ -114,7 +114,6 @@ img{
   font-size: 15px;
   border-radius: 15px;
   font-weight: bold;
- 
 }
 
 .headernav .hover-nav a:hover,
@@ -215,6 +214,11 @@ img{
 .share-buttons i{
   padding: 0 5px;
   font-size: 12px;
+}
+
+.rsp-miscnav,
+.rsp-headernav{
+  display: none;
 }
 
 /*global articles
@@ -338,7 +342,7 @@ img{
 
 .politics:hover,
 .politics:active,
-.politics:hover{
+.politics:focus{
   background: #5c3667;
 }
 

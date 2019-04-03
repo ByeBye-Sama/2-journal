@@ -12,5 +12,5 @@ Using jquery meanwhile I learn js
 
 
 You can test it here:
-https://byebye-sama.github.io/practice2/
+https://byebye-sama.github.io/2-journal/
 
